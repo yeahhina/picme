@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+*
+{
+    color: #000;
+    font-family: "White Rabbit";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Header
+{
+  border: 1px solid rgba(0, 0, 0, 0.02);
+  background: #DAC8D9;
+  flex-shrink: 0;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:111px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo
+{
+    color: #000;
+    font-family: "Karmatic Arcade";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
+a
+{
+    width: 250px;
+    flex-shrink: 0;
+    text-align:center;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:hover
+{
+    background-color: #000;
 }
