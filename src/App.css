@@ -30,36 +30,7 @@
     white-space: nowrap;
     user-select: none;
 }
-body {
-    height: 100%;
-    margin: 0;
-    background-color: #FEFAEE;
-    text-align: center;    
-}
 
-button
-{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 100px;
-    border: 2px solid #000;
-    background: #DAC8D9;
-    width: 478px;
-    height: 89px;
-    flex-shrink: 0;
-
-}
-button:hover
-{
-    border: 3px solid #000;
-    width: 483px;
-    height: 94px;
-
-}
 
 a
 {
@@ -71,4 +42,33 @@ a
 .nav a:hover
 {
     text-decoration: underline;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #FEFAEE;  
+}
+
+button
+{
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #DAC8D9;
+    width: 478px;
+    height: 89px;
+
+}
+button:hover
+{
+    border: 3px solid #000;
+    width: 483px;
+    height: 94px;
+
 }

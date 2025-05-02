@@ -9,6 +9,7 @@ function Header(){
                 <a>FAQ</a>
                 <a>PRIVACY POLICY</a>
                 <a>CONTACT ME</a>
+                <a>DONATE</a>
             </div>
         </div>
     )
