@@ -5,11 +5,10 @@ function Header(){
             <div>
                 <a class="logo">PIC-ME</a>
             </div>
-            <div class="navigation-buttons">
+            <div class="nav">
                 <a>FAQ</a>
                 <a>PRIVACY POLICY</a>
                 <a>CONTACT ME</a>
-                <a>DONATE</a>
             </div>
         </div>
     )

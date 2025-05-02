@@ -6,6 +6,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    
 }
 .Header
 {
@@ -25,15 +26,49 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding: 28px 40px;
+    white-space: nowrap;
+    user-select: none;
 }
-a
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #FEFAEE;
+    text-align: center;    
+}
+
+button
 {
-    width: 250px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100px;
+    border: 2px solid #000;
+    background: #DAC8D9;
+    width: 478px;
+    height: 89px;
     flex-shrink: 0;
-    text-align:center;
 
 }
-a:hover
+button:hover
 {
-    background-color: #000;
+    border: 3px solid #000;
+    width: 483px;
+    height: 94px;
+
+}
+
+a
+{
+    height:100%;
+    text-align:center;
+    padding: 30px 20px;
+    white-space: nowrap;
+}
+.nav a:hover
+{
+    text-decoration: underline;
 }

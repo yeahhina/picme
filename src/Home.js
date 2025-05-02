@@ -1,9 +1,9 @@
 import React from "react";
 function Home(){
     return (
-    <div class="Home">
-        <button>CLICK HERE to START</button>
-    </div>
+        <body>
+            <button>CLICK HERE to START</button>
+        </body> 
     )
 }
 export default Home;

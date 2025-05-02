@@ -4,10 +4,10 @@ import Body from './Home.js';
 
 function App() {
   return (
-    <>
+    <div class="Main">
       <Header />
       <Body />
-    </>
+    </div>
   );
 }
 
