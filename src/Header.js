@@ -1,4 +1,3 @@
-import React from "react";
 function Header(){
     return (
         <div class="Header">
@@ -9,7 +8,6 @@ function Header(){
                 <a>FAQ</a>
                 <a>PRIVACY POLICY</a>
                 <a>CONTACT ME</a>
-                <a>DONATE</a>
             </div>
         </div>
     )

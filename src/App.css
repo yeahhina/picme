@@ -1,25 +1,25 @@
-*
-{
+* {
     color: #000;
     font-family: "White Rabbit";
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    
+
 }
-.Header
-{
-  border: 1px solid rgba(0, 0, 0, 0.02);
-  background: #DAC8D9;
-  flex-shrink: 0;
-  display:flex;
-  justify-content: space-between;
-  align-items:center;
-  height:111px;
+
+.Header {
+    border-bottom: 2px solid #000;
+    ;
+    background: #DAC8D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 111px;
+
 }
-.logo
-{
+
+.logo {
     color: #000;
     font-family: "Karmatic Arcade";
     font-size: 48px;
@@ -32,32 +32,38 @@
 }
 
 
-a
-{
-    height:100%;
-    text-align:center;
+a {
+    height: 100%;
+    text-align: center;
     padding: 30px 20px;
     white-space: nowrap;
 }
-.nav a:hover
-{
+
+a:hover , .editBox button:hover{
     text-decoration: underline;
 }
+
 body {
-    height: 100%;
-    margin: 0;
-    background-color: #FEFAEE;  
+    background-color: #FEFAEE;
+    display: flex;
+    flex-direction: column;
 }
 
-button
-{
+p {
+    padding: 50px;
+}
 
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.home,
+.camera {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+
+}
+
+button {
     border-radius: 100px;
     border: 2px solid #000;
     background: #DAC8D9;
@@ -65,10 +71,57 @@ button
     height: 89px;
 
 }
-button:hover
-{
+
+button:hover {
     border: 3px solid #000;
     width: 483px;
     height: 94px;
 
+}
+.editor{
+    display: flex;
+    justify-content: space-evenly;
+    gap:20px;
+}
+.polaroid{
+ 
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 30px;
+}
+.polaroid p{
+    padding: 100px;
+}
+
+.editBox {
+    width: 584px;
+    height: 642px;
+    background-color: #DAC8D9;
+    border-radius: 20px;
+    border: 2px solid #000;
+    overflow-y: auto;
+    text-align: center;
+}
+.rightPanel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        padding: 60px;;
+}
+
+.editBox button {
+    background-color: aqua;
+    width: 450px;
+    height: 61px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #FEFAEE;
+    margin: 11px;
+    display: inline-block;
+}
+
+p {
+    padding: 0%;
 }
