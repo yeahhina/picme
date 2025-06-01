@@ -1,12 +1,12 @@
 import { frameImages, stickerImages } from './Assets';
 function Editor() {
     return (
-        <div class="editor">
-            <div class="polaroid">
+        <div className="editor">
+            <div className="polaroid">
                 <img src={frameImages.purple} alt="Purple Frame" />
             </div>
-            <div class="rightPanel">
-                <div class="editBox">
+            <div className="rightPanel">
+                <div className="editBox">
                     <p>FRAME</p>
                     <button>YELLOW</button>
                     <button>GREEN</button>

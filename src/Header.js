@@ -1,13 +1,18 @@
+import ReactDOM from "react-dom/client";
+import { Link, NavLink } from "react-router-dom";
+import FAQ from './Faq.js';
+import Policy from './Policy.js';
+import Contact from './Contact.js';
 function Header(){
     return (
-        <div class="Header">
+        <div className="Header">
             <div>
-                <a class="logo">PIC-ME</a>
+                <NavLink className="logo" to="/">PIC-ME</NavLink>
             </div>
-            <div class="nav">
-                <a>FAQ</a>
-                <a>PRIVACY POLICY</a>
-                <a>CONTACT ME</a>
+            <div className="nav">
+                <NavLink className="nav-link" to="/faq">FAQ</NavLink>
+                <NavLink className="nav-link" to="/policy">PRIVACY POLICY</NavLink>
+                <NavLink className="nav-link" to="/contact">CONTACT ME</NavLink>
             </div>
         </div>
     )

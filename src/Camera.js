@@ -1,10 +1,10 @@
+import WebCamera from './components/webcam'
 function Camera(){
+
     return (
-    <div class="camera">
+    <div className="camera">
         <p>1,2,3 and POSE!</p>
-        <svg width="643" height="437" xmlns="http://www.w3.org/2000/svg">
-            <rect width="643" height="437" fill="grey" />
-        </svg>
+        <WebCamera/>
         <p>TIMER</p>
     </div>
     )
