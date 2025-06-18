@@ -1,22 +1,24 @@
 import Countdown from 'react-countdown';
 import Webcam from "react-webcam";
 import useSound from 'use-sound';
-import Sound from "./camera_sound.mp3";
+import Sound from "./assets/camera_sound.mp3";
+
 
 function TimerWithSound() {
   const [play] = useSound(Sound);
   const renderer = ({ seconds, completed }) => {
-    if (completed) {
+    if (completed) 
+    {
       play();
-    } else {
+    } 
+    else 
+    {
       return <span>{seconds}</span>;
     }
   };
 
   return (
-    <div>
       <Countdown date={Date.now() + 5000} renderer={renderer} />
-    </div>
   );
 }
 function Camera(){
