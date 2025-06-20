@@ -1,144 +1,146 @@
 * {
-    color: #000;
-    font-family: "White Rabbit";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
+  color: #000;
+  font-family: "White Rabbit";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .webcam {
-    width:640px;
-    height:480px;
-    background-color: aqua;
+  width: 640px;
+  height: 480px;
+  background-color: aqua;
 }
 .Header {
-    border-bottom: 2px solid #000;
-    ;
-    background: #DAC8D9;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 111px;
-
+  border-bottom: 2px solid #000;
+  background: #dac8d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 111px;
 }
 
 .logo {
-    color: #000;
-    font-family: "Karmatic Arcade";
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 28px 40px;
-    white-space: nowrap;
-    user-select: none;
-    text-decoration: none;
+  color: #000;
+  font-family: "Karmatic Arcade";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 28px 40px;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
 }
-
 
 a {
-    height: 100%;
-    text-align: center;
-    padding: 30px 20px;
-    white-space: nowrap;
+  height: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  white-space: nowrap;
 }
 
-.nav a:hover, .nav-link:hover, .editBox button:hover{
-    text-decoration: underline;
+.nav a:hover,
+.nav-link:hover,
+.editBox button:hover {
+  text-decoration: underline;
 }
-.nav-link
-{
-    text-decoration: none;
+.nav-link {
+  text-decoration: none;
 }
 
 body {
-    background-color: #FEFAEE;
-    display: flex;
-    flex-direction: column;
+  background-color: #fefaee;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
-    padding: 50px;
+  padding: 50px;
 }
 
 .home,
 .camera {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    height: 80vh;
-
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
 }
 
 button {
-    border-radius: 100px;
-    border: 2px solid #000;
-    background: #DAC8D9;
-    width: 478px;
-    height: 89px;
-
+  border-radius: 100px;
+  border: 2px solid #000;
+  background: #dac8d9;
+  width: 478px;
+  height: 89px;
 }
 
 button:hover {
-    border: 3px solid #000;
-    width: 483px;
-    height: 94px;
-
+  border: 3px solid #000;
+  width: 483px;
+  height: 94px;
 }
-.editor{
-    display: flex;
-    justify-content: space-evenly;
-    gap:20px;
+.editor {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
 }
-.polaroid{
- 
-    display:flex;
-    align-items:center;
-    flex-direction: column;
-    padding: 30px;
+.polaroid {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
 }
-.polaroid p{
-    padding: 100px;
+.polaroid p {
+  padding: 100px;
 }
 
 .editBox {
-    width: 584px;
-    height: 642px;
-    background-color: #DAC8D9;
-    border-radius: 20px;
-    border: 2px solid #000;
-    overflow-y: auto;
-    text-align: center;
+  width: 584px;
+  height: 642px;
+  background-color: #dac8d9;
+  border-radius: 20px;
+  border: 2px solid #000;
+  overflow-y: auto;
+  text-align: center;
 }
-.rightPanel{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
-        padding: 60px;;
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
 }
 
 .editBox button {
-    background-color: aqua;
-    width: 450px;
-    height: 61px;
-    border-radius: 10px;
-    border: 2px solid #000;
-    background: #FEFAEE;
-    margin: 11px;
-    display: inline-block;
+  background-color: aqua;
+  width: 450px;
+  height: 61px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fefaee;
+  margin: 11px;
+  display: inline-block;
 }
-.policy, .faq, .contact{
-    padding:200px;
-    padding-top: 20px;
-    padding-bottom: 20px;;
+.policy,
+.faq,
+.contact {
+  padding: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 h1 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 p {
-    padding: 0%;
+  padding: 0%;
+}
+.webCameraAndTimer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
