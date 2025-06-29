@@ -2,17 +2,39 @@
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
+  padding-top: 5%;
 }
 .polaroid {
-  padding: 30px;
   width: 296px;
   height: 876px;
+  display: grid;
 }
-.polaroid img {
+.sticker,
+.frame {
   grid-area: 1/1;
   position: absolute;
 }
-
+.capturedImages {
+  padding-top: 19px;
+}
+.capturedImage {
+  width: 256px;
+  height: 173px;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+.blackAndWhite {
+  width: 256px;
+  height: 173px;
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  filter: grayscale(90%);
+}
+.vintage {
+  filter: blur(0.05rem) saturate(0.7) contrast(1.5) brightness(1.2);
+}
 .editBox {
   width: 584px;
   height: 642px;

@@ -7,7 +7,10 @@ const WebCamera = ({ captureRequest }) => {
   const [imgList, setImgList] = useState([]);
 
   const capture = useCallback(() => {
-    const imageSrc = webCameraRef.current.getScreenshot();
+    const imageSrc = webCameraRef.current.getScreenshot({
+      width: 256,
+      height: 173,
+    });
     setImgList((prevList) => [...prevList, imageSrc]);
   }, [webCameraRef]);
 
