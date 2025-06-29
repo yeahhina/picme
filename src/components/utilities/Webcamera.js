@@ -1,37 +1,27 @@
-import React from "react";
 import Webcam from "react-webcam";
-import Countdown from "react-countdown";
-import useSound from "use-sound";
-import Sound from "../../assets/sound/camera_sound.mp3";
+import TimerWithSound from "./Timer";
+import { useCallback, useRef, useEffect, useState, use } from "react";
+import { setCapturedImages } from "./CaptureImages";
 
-const TimerWithSound = () => {
-  const [play] = useSound(Sound);
+const WebCamera = ({ captureRequest }) => {
+  const webCameraRef = useRef(null);
+  const [imgList, setImgList] = useState([]);
 
-  const handleComplete = () => {
-    play();
-  };
+  const capture = useCallback(() => {
+    const imageSrc = webCameraRef.current.getScreenshot();
+    setImgList((prevList) => [...prevList, imageSrc]);
+  }, [webCameraRef]);
 
-  const renderer = ({ seconds, completed }) => {
-    if (completed) {
-      return null; // Stop showing countdown after it's done
+  useEffect(() => {
+    captureRequest ? capture() : console.log("failed");
+    if (imgList.length === 4) {
+      setCapturedImages(imgList);
     }
-    return <span>{seconds}</span>;
-  };
-
-  return (
-    <Countdown
-      date={Date.now() + 5000}
-      renderer={renderer}
-      onComplete={handleComplete}
-    />
-  );
-};
-
-const WebCamera = () => {
+  }, [captureRequest, capture]);
   return (
     <div className="webCameraAndTimer">
-      <Webcam />
-      <TimerWithSound />
+      <Webcam ref={webCameraRef} />
+      <TimerWithSound handleEnd={capture} />
     </div>
   );
 };
