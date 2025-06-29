@@ -1,21 +1,21 @@
 import Countdown from "react-countdown";
 import useSound from "use-sound";
 import Sound from "../../assets/sound/camera_sound.mp3";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const TimerWithSound = ({ onCycle, onComplete }) => {
   const [play] = useSound(Sound);
   const [date, setDate] = useState(Date.now() + 5000);
   const [key, setKey] = useState(0);
   const [isDone, setIsDone] = useState(false);
   const [showPicMe, setShowPicMe] = useState(false);
-  const countRef = useState(0);
+  const countRef = useRef(0);
   const handleComplete = () => {
     setShowPicMe(true);
     play();
     onCycle();
     setTimeout(() => {
       countRef.current += 1;
-      if (countRef.current >= 4) {
+      if (countRef.current < 4) {
         setDate(Date.now() + 5000);
         setKey((prevKey) => prevKey + 1);
         setShowPicMe(false);
@@ -23,7 +23,7 @@ const TimerWithSound = ({ onCycle, onComplete }) => {
         setShowPicMe(false);
         setIsDone(true);
         setTimeout(() => {
-          setIsDone(false);
+          onComplete();
         }, 1000);
       }
     }, 1000);
@@ -36,15 +36,14 @@ const TimerWithSound = ({ onCycle, onComplete }) => {
       return <span>Done!</span>;
     }
     return <span>{seconds}</span>;
-
-    return (
-      <Countdown
-        key={key}
-        date={Date.now() + 5000}
-        renderer={renderer}
-        onComplete={handleComplete}
-      />
-    );
   };
+  return (
+    <Countdown
+      key={key}
+      date={date}
+      renderer={renderer}
+      onComplete={handleComplete}
+    />
+  );
 };
 export default TimerWithSound;

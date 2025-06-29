@@ -1,8 +1,4 @@
-import ReactDOM from "react-dom/client";
 import { Link, NavLink } from "react-router-dom";
-import FAQ from "./Faq.js";
-import Policy from "./Policy.js";
-import Contact from "./Contact.js";
 function Header() {
   return (
     <div className="Header">

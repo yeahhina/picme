@@ -1,0 +1,42 @@
+.editor {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.polaroid {
+  padding: 30px;
+  width: 296px;
+  height: 876px;
+}
+.polaroid img {
+  grid-area: 1/1;
+  position: absolute;
+}
+
+.editBox {
+  width: 584px;
+  height: 642px;
+  background-color: #dac8d9;
+  border-radius: 20px;
+  border: 2px solid #000;
+  overflow-y: auto;
+  text-align: center;
+}
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px;
+}
+
+.editBox button {
+  background-color: aqua;
+  width: 450px;
+  height: 61px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  background: #fefaee;
+  margin: 11px;
+  display: inline-block;
+}

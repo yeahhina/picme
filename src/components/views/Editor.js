@@ -1,25 +1,53 @@
 import { frameImages, stickerImages } from "../utilities/Assets";
+import { getCapturedImages } from "../utilities/CaptureImages";
+import { useState } from "react";
+import "./Editor.css";
 function Editor() {
+  const capturedImages = getCapturedImages();
+  const defaultFrame = frameImages[0];
+  const [selectedFrame, setSelectedFrame] = useState(defaultFrame);
+  const [selectedSticker, setSelectedSticker] = useState(null);
+  const handleStickerChange = (sticker) => {
+    setSelectedSticker(sticker);
+  };
+  const handleFrameChange = (frame) => {
+    setSelectedFrame(frame);
+  };
   return (
     <div className="editor">
       <div className="polaroid">
-        <img src={frameImages.purple} alt="Purple Frame" />
+        <img className="frame" src={selectedFrame.image} alt="Purple Frame" />{" "}
+        <div className="capturedImages">
+          {capturedImages.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Captured ${index + 1}`}
+              className="capturedImage"
+            />
+          ))}
+        </div>
+        {selectedSticker ? (
+          <img className="sticker" src={selectedSticker.image} />
+        ) : null}
       </div>
       <div className="rightPanel">
         <div className="editBox">
           <p>FRAME</p>
-          <button>YELLOW</button>
-          <button>GREEN</button>
-          <button>BLUE</button>
-          <button>PURPLE</button>
-          <button>PINK</button>
-          <button>ORANGE</button>
-
+          {frameImages.map((frame) => (
+            <button key={frame.name} onClick={() => handleFrameChange(frame)}>
+              {frame.name.toUpperCase()}
+            </button>
+          ))}
           <p>STICKERS</p>
-          <button>SPRING</button>
-          <button>SUMMER</button>
-          <button>AUTUMN</button>
-          <button>WINTER</button>
+          {stickerImages.map((sticker) => (
+            <button
+              key={sticker.name}
+              onClick={() => handleStickerChange(sticker)}
+            >
+              {sticker.name.toUpperCase()}
+            </button>
+          ))}
 
           <p>FILTER</p>
           <button>NATURAL</button>

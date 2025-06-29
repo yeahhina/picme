@@ -12,19 +12,19 @@ import spring from "../../assets/sticker/spring.png";
 import summer from "../../assets/sticker/summer.png";
 import winter from "../../assets/sticker/winter.png";
 
-// Export organized objects
-export const frameImages = {
-  blue,
-  green,
-  orange,
-  pink,
-  purple,
-  yellow,
-};
+// Export organized arrays
+export const frameImages = [
+  { name: "purple", image: purple },
+  { name: "blue", image: blue },
+  { name: "green", image: green },
+  { name: "orange", image: orange },
+  { name: "pink", image: pink },
+  { name: "yellow", image: yellow },
+];
 
-export const stickerImages = {
-  autumn,
-  spring,
-  summer,
-  winter,
-};
+export const stickerImages = [
+  { name: "autumn", image: autumn },
+  { name: "spring", image: spring },
+  { name: "summer", image: summer },
+  { name: "winter", image: winter },
+];

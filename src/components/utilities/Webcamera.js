@@ -1,5 +1,4 @@
 import Webcam from "react-webcam";
-import TimerWithSound from "./Timer";
 import { useCallback, useRef, useEffect, useState, use } from "react";
 import { setCapturedImages } from "./CaptureImages";
 
@@ -21,7 +20,6 @@ const WebCamera = ({ captureRequest }) => {
   return (
     <div className="webCameraAndTimer">
       <Webcam ref={webCameraRef} />
-      <TimerWithSound handleEnd={capture} />
     </div>
   );
 };
