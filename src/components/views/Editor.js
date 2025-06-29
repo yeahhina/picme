@@ -76,7 +76,6 @@ function Editor() {
               {sticker.name.toUpperCase()}
             </button>
           ))}
-          <button onClick={() => handleStickerChange(null)}>NONE</button>
 
           <p>FILTER</p>
           <button onClick={() => handleFilterChange("")}>NATURAL</button>

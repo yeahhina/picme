@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 function Camera() {
   const [triggerCapture, setTriggerCapture] = useState(false);
+  const [loaded, setLoaded] = useState(false);
   const navigate = useNavigate();
   const handleCapture = () => {
     setTriggerCapture(true);
@@ -18,8 +19,10 @@ function Camera() {
   return (
     <div className="camera">
       <p>1,2,3 and POSE!</p>
-      <WebCamera captureRequest={triggerCapture} />
-      <TimerWithSound onCycle={handleCapture} onComplete={handleComplete} />
+      <WebCamera captureRequest={triggerCapture} onLoaded={setLoaded} />
+      {loaded ? (
+        <TimerWithSound onCycle={handleCapture} onComplete={handleComplete} />
+      ) : null}
     </div>
   );
 }

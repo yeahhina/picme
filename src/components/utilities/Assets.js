@@ -23,8 +23,9 @@ export const frameImages = [
 ];
 
 export const stickerImages = [
-  { name: "autumn", image: autumn },
   { name: "spring", image: spring },
   { name: "summer", image: summer },
+  { name: "autumn", image: autumn },
   { name: "winter", image: winter },
+  { name: "none", image: null },
 ];
