@@ -1,4 +1,5 @@
-import { Link, NavLink } from "react-router-dom";
+import "./Header.css";
+import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <div className="Header">

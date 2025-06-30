@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./Faq.css";
 function FAQ() {
   return (
     <div className="faq">

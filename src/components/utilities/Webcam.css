@@ -1,0 +1,13 @@
+.webcamView {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 12px;
+}
+
+.webCameraAndTimer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

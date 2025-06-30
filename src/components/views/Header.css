@@ -1,0 +1,53 @@
+.Header {
+  border-bottom: 2px solid #000;
+  background: #dac8d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 111px;
+}
+
+.logo {
+  color: #000;
+  font-family: "Karmatic Arcade";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 28px 40px;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+}
+
+a {
+  height: 100%;
+  text-align: center;
+  padding: 30px 20px;
+  white-space: nowrap;
+}
+.nav a:hover,
+.nav-link:hover,
+.editBox button:hover {
+  text-decoration: underline;
+}
+.nav-link {
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    padding-top: 10px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav a {
+    padding: 10px;
+  }
+}

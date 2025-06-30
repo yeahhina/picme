@@ -2,6 +2,7 @@ import WebCamera from "../utilities/Webcamera";
 import TimerWithSound from "../utilities/Timer";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Camera.css";
 
 function Camera() {
   const [triggerCapture, setTriggerCapture] = useState(false);
