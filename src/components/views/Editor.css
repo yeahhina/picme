@@ -33,7 +33,7 @@
   filter: grayscale(90%);
 }
 .vintage {
-  filter: blur(0.05rem) saturate(0.7) contrast(1.5) brightness(1.2);
+  filter: blur(0.7px) saturate(0.7) contrast(1.5) brightness(1.2);
 }
 .editBox {
   width: 584px;
