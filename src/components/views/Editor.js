@@ -2,7 +2,7 @@ import { frameImages, stickerImages } from "../utilities/Assets";
 import { getCapturedImages } from "../utilities/CaptureImages";
 import { useState, useRef } from "react";
 import "./Editor.css";
-import html2canvas from "html2canvas";
+import { Download } from "../utilities/Download";
 function Editor() {
   const capturedImages = getCapturedImages();
   const defaultFrame = frameImages[0];
@@ -29,30 +29,13 @@ function Editor() {
   const handleFrameChange = (frame) => {
     setSelectedFrame(frame);
   };
-  const takeScreenshot = () => {
-    html2canvas(polaroidRef.current, {
-      backgroundColor: "#fff", // optional
-      useCORS: true, // handles cross-origin images
-    }).then((canvas) => {
-      const link = document.createElement("a");
-      link.download = "polaroid.png";
-      link.href = canvas.toDataURL("image/png");
-      link.click();
-    });
-  };
-
   return (
     <div className="editor">
       <div className="polaroid" ref={polaroidRef}>
-        <img className="frame" src={selectedFrame.image} alt="Purple Frame" />{" "}
+        <img className="frame" src={selectedFrame.image} alt="frame" />{" "}
         <div className="capturedImages">
           {capturedImages.map((image) => (
-            <img
-              src={image}
-              className={`capturedImage ${
-                isBlackAndWhite ? "blackAndWhite" : ""
-              } ${isVintage ? "vintage" : ""}`}
-            />
+            <img src={image} className={`capturedImage`} />
           ))}
         </div>
         {selectedSticker ? (
@@ -84,7 +67,7 @@ function Editor() {
           </button>
           <button onClick={() => handleFilterChange("vintage")}>VINTAGE</button>
         </div>
-        <button class="download" onClick={takeScreenshot}>
+        <button class="download" onClick={() => Download(polaroidRef)}>
           DOWNLOAD
         </button>
       </div>
