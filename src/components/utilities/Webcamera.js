@@ -8,7 +8,9 @@ const WebCamera = ({ captureRequest, onLoaded }) => {
   const [imgList, setImgList] = useState([]);
 
   const capture = useCallback(() => {
-    const imageSrc = webCameraRef.current.getScreenshot();
+    const imageSrc = webCameraRef.current.getScreenshot({
+      mimeType: "image/png",
+    });
     setImgList((prevList) => [...prevList, imageSrc]);
   }, [webCameraRef]);
 
@@ -24,6 +26,7 @@ const WebCamera = ({ captureRequest, onLoaded }) => {
         className="webcamView"
         ref={webCameraRef}
         onUserMedia={() => onLoaded(true)}
+        screenshotFormat="image/png"
       />
     </div>
   );

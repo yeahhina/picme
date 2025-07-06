@@ -17,13 +17,6 @@
 .capturedImages {
   padding-top: 19px;
 }
-.capturedImage {
-  width: 256px;
-  height: 173px;
-  position: relative;
-  padding-left: 20px;
-  padding-bottom: 5px;
-}
 .blackAndWhite {
   width: 256px;
   height: 173px;

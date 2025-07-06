@@ -3,26 +3,14 @@ import { getCapturedImages } from "../utilities/CaptureImages";
 import { useState, useRef } from "react";
 import "./Editor.css";
 import { Download } from "../utilities/Download";
+import { FilteredImage } from "../utilities/FilteredImage";
 function Editor() {
   const capturedImages = getCapturedImages();
   const defaultFrame = frameImages[0];
   const [selectedFrame, setSelectedFrame] = useState(defaultFrame);
   const [selectedSticker, setSelectedSticker] = useState(null);
-  const [isBlackAndWhite, setIsBlackAndWhite] = useState(false);
-  const [isVintage, setIsVintage] = useState(false);
+  const [selectedFilter, setSelectedFilter] = useState("natural");
   const polaroidRef = useRef(null);
-  const handleFilterChange = (filter) => {
-    if (filter === "blackAndWhite") {
-      setIsBlackAndWhite(true);
-      setIsVintage(false);
-    } else if (filter === "vintage") {
-      setIsVintage(true);
-      setIsBlackAndWhite(false);
-    } else {
-      setIsBlackAndWhite(false);
-      setIsVintage(false);
-    }
-  };
   const handleStickerChange = (sticker) => {
     setSelectedSticker(sticker);
   };
@@ -35,7 +23,7 @@ function Editor() {
         <img className="frame" src={selectedFrame.image} alt="frame" />{" "}
         <div className="capturedImages">
           {capturedImages.map((image) => (
-            <img src={image} className={`capturedImage`} />
+            <FilteredImage imageUrl={image} filter={selectedFilter} />
           ))}
         </div>
         {selectedSticker ? (
@@ -61,11 +49,27 @@ function Editor() {
           ))}
 
           <p>FILTER</p>
-          <button onClick={() => handleFilterChange("")}>NATURAL</button>
-          <button onClick={() => handleFilterChange("blackAndWhite")}>
+          <button
+            onClick={() => {
+              setSelectedFilter("natural");
+            }}
+          >
+            NATURAL
+          </button>
+          <button
+            onClick={() => {
+              setSelectedFilter("greyscale");
+            }}
+          >
             BLACK AND WHITE
           </button>
-          <button onClick={() => handleFilterChange("vintage")}>VINTAGE</button>
+          <button
+            onClick={() => {
+              setSelectedFilter("sepia");
+            }}
+          >
+            VINTAGE
+          </button>
         </div>
         <button class="download" onClick={() => Download(polaroidRef)}>
           DOWNLOAD
