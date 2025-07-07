@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/picme/static/css/main.b48176c4.css",
-    "main.js": "/picme/static/js/main.a3c4ca95.js",
+    "main.js": "/picme/static/js/main.02249232.js",
     "static/js/885.b3148f00.chunk.js": "/picme/static/js/885.b3148f00.chunk.js",
     "static/js/453.31085b06.chunk.js": "/picme/static/js/453.31085b06.chunk.js",
     "static/media/karmaticArcade.ttf": "/picme/static/media/karmaticArcade.5df8cd545dcd2db2bf8b.ttf",
@@ -13,12 +13,12 @@
     "static/media/WhiteRabbit.woff": "/picme/static/media/WhiteRabbit.5a270d89b7e012e5ac32.woff",
     "index.html": "/picme/index.html",
     "main.b48176c4.css.map": "/picme/static/css/main.b48176c4.css.map",
-    "main.a3c4ca95.js.map": "/picme/static/js/main.a3c4ca95.js.map",
+    "main.02249232.js.map": "/picme/static/js/main.02249232.js.map",
     "885.b3148f00.chunk.js.map": "/picme/static/js/885.b3148f00.chunk.js.map",
     "453.31085b06.chunk.js.map": "/picme/static/js/453.31085b06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b48176c4.css",
-    "static/js/main.a3c4ca95.js"
+    "static/js/main.02249232.js"
   ]
 }
