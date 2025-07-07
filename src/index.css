@@ -1,19 +1,16 @@
 @font-face {
-  font-family: "WhiteRabbit";
-  src: url("./static/fonts/whiteRabbit.ttf") format("truetype");
+  font-family: "White Rabbit";
+  src: url("./static/fonts/WhiteRabbit.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: "KarmaticArcade";
+  font-family: "Karmatic Arcade";
   src: url("./static/fonts/karmaticArcade.ttf") format("truetype");
 }
 body {
   margin: 0;
-  font-family: "WhiteRabbit";
+  font-family: "White Rabbit";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
