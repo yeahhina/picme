@@ -23,7 +23,9 @@ function Editor() {
         <img className="frame" src={selectedFrame.image} alt="frame" />{" "}
         <div className="capturedImages">
           {capturedImages.map((image) => (
-            <FilteredImage imageUrl={image} filter={selectedFilter} />
+            <div className="capturedImage">
+              <FilteredImage imageUrl={image} filter={selectedFilter} />
+            </div>
           ))}
         </div>
         {selectedSticker ? (
@@ -65,7 +67,7 @@ function Editor() {
           </button>
           <button
             onClick={() => {
-              setSelectedFilter("sepia");
+              setSelectedFilter("vintage");
             }}
           >
             VINTAGE

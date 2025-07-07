@@ -14,20 +14,18 @@
   grid-area: 1/1;
   position: absolute;
 }
-.capturedImages {
-  padding-top: 19px;
-}
-.blackAndWhite {
+.capturedImage {
   width: 256px;
   height: 173px;
   position: relative;
   padding-left: 20px;
-  padding-bottom: 5px;
-  filter: grayscale(90%);
+  padding-bottom: 12.5px;
 }
-.vintage {
-  filter: blur(0.7px) saturate(0.7) contrast(1.5) brightness(1.2);
+
+.capturedImages {
+  padding-top: 18px;
 }
+
 .editBox {
   width: 584px;
   height: 642px;
