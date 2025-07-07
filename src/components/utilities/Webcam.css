@@ -1,8 +1,8 @@
 .webcamView {
   width: 100%;
+  max-width: 700px;
   height: auto;
   border-radius: 12px;
-  aspect-ratio: 3 / 2;
 }
 
 .webCameraAndTimer {

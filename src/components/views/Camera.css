@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  height: 40%;
   gap: 20px;
 }
 @media screen and (max-width: 768px) {
