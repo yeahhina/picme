@@ -6,6 +6,11 @@ import "./Webcam.css";
 const WebCamera = ({ captureRequest, onLoaded }) => {
   const webCameraRef = useRef(null);
   const [imgList, setImgList] = useState([]);
+  const videoConstraints = {
+    width: 1028,
+    height: 700,
+    facingMode: "user",
+  };
 
   const capture = useCallback(() => {
     const imageSrc = webCameraRef.current.getScreenshot({
