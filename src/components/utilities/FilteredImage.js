@@ -18,11 +18,11 @@ export function FilteredImage({ imageUrl, filter }) {
           Konva.Filters.Contrast,
           Konva.Filters.Brighten,
         ]);
-        node.blurRadius(0.7);
-        node.hue(0);
-        node.saturation(-0.3);
-        node.contrast(0.5);
-        node.brightness(0.2);
+        node.blurRadius(0.4);
+        node.hue(5);
+        node.saturation(-0.5);
+        node.contrast(25);
+        node.brightness(0.05);
         break;
       default:
         node.filters([]);
