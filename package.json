@@ -17,6 +17,7 @@
     "konva": "^9.3.20",
     "react": "^19.1.0",
     "react-countdown": "^2.3.6",
+    "react-device-detect": "^2.2.3",
     "react-dom": "^19.1.0",
     "react-konva": "^19.0.7",
     "react-router-dom": "^6.30.1",
