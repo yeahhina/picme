@@ -8,14 +8,11 @@
   width: 296px;
   height: 876px;
   display: grid;
-  touch-action: auto;
-  -webkit-overflow-scrolling: touch;
 }
 .sticker,
 .frame {
   grid-area: 1/1;
   position: absolute;
-  pointer-events: none;
 }
 .capturedImage {
   width: 256px;
