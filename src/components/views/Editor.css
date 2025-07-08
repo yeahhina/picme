@@ -8,6 +8,7 @@
   width: 296px;
   height: 876px;
   display: grid;
+  overflow-y: auto;
 }
 .sticker,
 .frame {
@@ -70,7 +71,7 @@
   }
   .rightPanel {
     width: 100%;
-    padding: 20px;
+    padding: 0px;
     gap: 20px;
   }
   button {
