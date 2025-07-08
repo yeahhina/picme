@@ -8,11 +8,13 @@
   width: 296px;
   height: 876px;
   display: grid;
+  pointer-events: none;
 }
 .sticker,
 .frame {
   grid-area: 1/1;
   position: absolute;
+  pointer-events: none;
 }
 .capturedImage {
   width: 256px;
@@ -20,6 +22,7 @@
   position: relative;
   padding-left: 20px;
   padding-bottom: 12.5px;
+  pointer-events: none;
 }
 
 .capturedImages {
