@@ -31,7 +31,7 @@ export function FilteredImage({ imageUrl, filter }) {
   };
   useEffect(() => {
     const img = new window.Image();
-    img.crossOrigim = "Anonymous";
+    img.crossOrigin = "Anonymous";
     img.src = imageUrl;
     img.onload = () => setImage(img);
   }, [imageUrl]);
