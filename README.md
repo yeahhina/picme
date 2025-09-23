@@ -1,4 +1,4 @@
-Pic Me- A Portable PhotoBooth
+# Pic Me- A Portable PhotoBooth
 
 This is a photobooth that lets you take pictures, apply frames, add stickers and download your creations - all in your browser.
 
