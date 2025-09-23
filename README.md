@@ -20,7 +20,7 @@ The main objectives of PicMe were to:
 - JavaScript, HTML, and CSS – for functionality, structure, and styling.  
 - Konva – to enable editing and manipulation of images, frames, and stickers on a canvas.  
 - html2canvas – to capture the final design and export it as a downloadable image.
-- 
+  
 [Live Website](https://yeahhina.github.io/picme/)
 
 Currently not working on certain browsers - Safari, Samsung Internet Browser</p>
