@@ -26,9 +26,11 @@ The PicMe interface was designed in Figma, with a focus on creating a visually a
 
 Interactive elements like buttons, frames, and stickers were designed to be clear and user-friendly, making it easy for users to customize and download their Polaroid-style photos.
 
-The following is a screenshot of the design on figma:
+The following are screenshots of the design on figma:
 
-![ss.png](https://i.postimg.cc/4y43Gmfb/ss.png)
+![image.png](https://i.postimg.cc/CMnLhjY5/image.png)
+
+![image.png](https://i.postimg.cc/pdPtKFgf/image.png)
 
   
 [Live Website](https://yeahhina.github.io/picme/)
