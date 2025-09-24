@@ -1,7 +1,5 @@
 # Pic Me- A Portable PhotoBooth
 
-This is a photobooth that lets you take pictures, apply frames, add stickers and download your creations - all in your browser.
-
 A React-based web app that allows users to create personalized Polaroid-style photos. It lets users upload or take a photo, customize it with frames and stickers, and download the final image easily.
 
 ## Project Objectives
