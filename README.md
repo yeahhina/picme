@@ -17,7 +17,7 @@ The main objectives of PicMe were to:
 - Git & GitHub – for version control and project collaboration.
 - React – as the core framework for building the web application and managing UI components.
 - JavaScript, HTML, and CSS – for functionality, structure, and styling.
-- Konva – to enable editing and manipulation of images, frames, and stickers on a canvas.
+- Konva – to enable editing and manipulation of images on a canvas.
 - html2canvas – to capture the final design and export it as a downloadable image.
 
 ## User Interface
