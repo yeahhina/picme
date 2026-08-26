@@ -4,7 +4,7 @@ import { setCapturedImages } from "./CaptureImages";
 import "./Webcam.css";
 import { isMobile } from "react-device-detect";
 
-const WebCamera = ({ captureRequest, onLoaded }) => {
+const WebCamera = ({ captureRequest, onLoaded, onError }) => {
   const webCameraRef = useRef(null);
   const [imgList, setImgList] = useState([]);
   const videoConstraints = isMobile
@@ -24,12 +24,14 @@ const WebCamera = ({ captureRequest, onLoaded }) => {
       setCapturedImages(imgList);
     }
   }, [captureRequest, capture]);
+  
   return (
     <div className="webCameraAndTimer">
       <Webcam
         className="webcamView"
         ref={webCameraRef}
         onUserMedia={() => onLoaded(true)}
+        onUserMediaError={onError}
         screenshotFormat="image/png"
         videoConstraints={videoConstraints}
       />

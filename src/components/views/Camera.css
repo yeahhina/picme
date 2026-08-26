@@ -11,3 +11,9 @@
     padding: 10px;
   }
 }
+
+.cameraError {
+  color: #c0392b;
+  text-align: center;
+  max-width: 320px;
+}
