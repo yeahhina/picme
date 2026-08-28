@@ -34,6 +34,7 @@ const WebCamera = ({ captureRequest, onLoaded, onError }) => {
         onUserMediaError={onError}
         screenshotFormat="image/png"
         videoConstraints={videoConstraints}
+        mirrored={true}
       />
     </div>
   );
