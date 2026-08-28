@@ -1,6 +1,6 @@
 import WebCamera from "../utilities/Webcamera";
 import TimerWithSound from "../utilities/Timer";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Camera.css";
 
@@ -9,6 +9,11 @@ function Camera() {
   const [loaded, setLoaded] = useState(false);
   const [cameraError, setCameraError] = useState(null);
   const navigate = useNavigate();
+  const cameraRef = useRef(null);
+
+  useEffect(() => {
+    cameraRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, []);
   const handleCapture = () => {
     setTriggerCapture(true);
     setTimeout(() => {
@@ -19,7 +24,7 @@ function Camera() {
     navigate("/editor");
   };
   return (
-    <div className="camera">
+    <div className="camera" ref={cameraRef}>
       <p>1,2,3 and POSE!</p>
       <WebCamera
         captureRequest={triggerCapture}

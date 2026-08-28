@@ -1,5 +1,8 @@
 .webcamView {
   width: 100%;
+  max-width: 400px;
+  max-height: 55vh;
+  height: auto;
   object-fit: cover;
   border-radius: 12px;
   overflow: hidden;
