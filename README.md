@@ -35,4 +35,3 @@ The following are screenshots of the design on figma:
   
 [Live Website](https://yeahhina.github.io/picme/)
 
-Currently not working on certain browsers - Safari, Samsung Internet Browser</p>
